@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<TITLE>
+YAMAMOTO Hiroyuki
+</TITLE>
+<link rel="stylesheet" href="freaks.css" type="text/css" media="screen">
+</HEAD>
+<BODY>
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74734444-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<BR><BR>
+
+<H3>多変量解析　研究概要</H3>
+
+<ul>
+
+	多変量解析を用いた高次元小サンプルデータの可視化と、負荷量が解釈可能な新しい手法の開発を行っています。<P>
+
+	<li>主成分分析の<B>主成分負荷量</B> [<a href="http://www.biomedcentral.com/1471-2105/15/51/abstract">Yamamoto et al., BMC Bioinformatics, (2014) 15(1):51.</a>]
+	<ul>
+		<li>従来のメタボロミクスでは、主成分分析を用いる際に、主成分係数や固有ベクトルを用いて重要な変数が選ばれてきました。
+		<li><B>主成分負荷量</B>を用いることで、<B>統計的に有意な変数を選ぶ</B>ことが出来、また有意な変数に対してエンリッチメント解析を行いました。
+	</ul>
+	<li>群に順序があるデータに適した<B>PLS-ROG</B> [<a href="http://onlinelibrary.wiley.com/doi/10.1002/cem.2883/full">Yamamoto, Journal of Chemometrics, 31(3) (2017) e2883.</a>]
+	<ul>
+		<li>Partial least squares(PLS)は群間を分けるようにデータを可視化できる一方で、群に順序がある場合、その順序を捉えられないことがあります、
+		<li>そのような場合に適した方法として、群に順序があるPLSであるPLS-ROGを提案しました。
+		<li><B>PLS負荷量とPLS-ROG負荷量</B>を用いて、<B>統計的に有意な変数を選ぶ</B>ことが出来ることを示しました。
+	</ul>
+	<li>サンプルに順序があるデータに適した<B>OS-PCA</B> [<a href="https://www.mdpi.com/2218-1989/11/3/149">Yamamoto et al., Metabolites, 11(3) (2021) 149.</a>]
+	<ul>
+		<li>経時的に取得されるサンプルでは、サンプルに順序の情報がありますが、主成分分析ではその特徴を捉えられないことがあります。
+		<li>平滑化主成分分析 [<a href="http://dx.doi.org/10.1016/j.chemolab.2009.05.006">Yamamoto et al., Chemometrics and Intelligent Laboratory Systems, 98 (2009) 136-142.</a>]はそのようなデータに有用です。
+		<li>しかし平滑化主成分分析では、その負荷量を統計的に説明することが難しく、統計的に有意な変数を選ぶことが出来ませんでした。
+		<li>そこで<B>直交平滑化主成分分析(OS-PCA)</B>を提案し、<B>OS-PC負荷量</B>を用いて<B>統計的に有意な変数を選ぶ</B>ことが出来るようになりました。
+	</ul>
+	<li>上記の解析が可能なRの<B>loadings</B>パッケージを公開しています [<a href="https://cran.r-project.org/web/packages/loadings/index.html">loadings: Loadings for Principal Component Analysis and Partial Least Squares</a>]
+</ul>
+
+<H3>参考文献</H3>
+
+<ul> 
+<li><B>PLS、PLS-ROG</B>
+	<ul>	
+	<li>Eiji Sasaki, <U>Hiroyuki Yamamoto</U>, Toru Asari, Rira Matsuta, Seiya Ota, Yuka Kimura, Shizuka Sasaki, Kyota Ishibashi, Yuji Yamamoto, Kenjiro Kami, Masataka Ando, Eiichi Tsuda, Yasuyuki Ishibashi <BR>
+	"Metabolomics with severity of radiographic knee osteoarthritis and early phase synovitis in middle-aged women from the Iwaki Health Promotion Project: a cross-sectional study", <I>Arthritis Research & Therapy</I>, 24 (2022) 145. <BR>
+	[ <a href="https://arthritis-research.biomedcentral.com/articles/10.1186/s13075-022-02830-w">link</a> (<a href="https://pubmed.ncbi.nlm.nih.gov/35710532/">Pubmed</a>)] <BR>
+	</li>
+
+	<li><U>Hiroyuki Yamamoto</U>, <BR>
+	"PLS-ROG: Partial least squares with rank order of groups.", <I>Journal of Chemometrics</I>, 31(3) (2017) e2883.<BR>
+	[ <a href="http://onlinelibrary.wiley.com/doi/10.1002/cem.2883/full">link</a> / <a href="http://biostats.bepress.com/cobra/art100/">preprint (older version)</a> ]
+	<BR>
+	</li>
+	</ul>
+
+<li><B>PCA、OS-PCA</B>
+	<ul>
+	<li><U>Hiroyuki Yamamoto</U>*, Yasumune Nakayama, Hiroshi Tsugawa<BR> 
+	"OS-PCA: Orthogonal Smoothed Principal Component Analysis Applied to Metabolome Data", <I>Metabolites</I>, 11(3) (2021) 149. <BR>
+	[ <a href="https://www.mdpi.com/2218-1989/11/3/149">link</a> (<a href="https://pubmed.ncbi.nlm.nih.gov/33807892/">Pubmed</a>)] (* corresponding author)<BR>
+	</li>
+	<li><U>Hiroyuki Yamamoto</U>*, Tamaki Fujimori, Hajime Sato, Gen Ishikawa, Kenjiro Kami, Yoshiaki Ohashi,<BR>
+	"Statistical hypothesis testing of factor loading in principal component analysis and its application to metabolite set enrichment analysis"
+	<I>BMC Bioinformatics</I>, (2014) 15(1):51.<BR>
+	[ <a href="http://www.biomedcentral.com/1471-2105/15/51/abstract">link</a> (<a href="http://www.ncbi.nlm.nih.gov/pubmed/24555693">Pubmed</a>) / <a href="errata_24555693.pdf">errata</a> / <a href="http://biostats.bepress.com/cobra/art99/"> preprint (older version)</a> / <a href="http://cran.r-project.org/web/packages/mseapca/">R package</a> / <a href="mseapca/">sample code</a> ] (* corresponding author)
+	<BR>
+	</li>
+	</ul>
+
+<li><B>CCA、FDA</B>
+	<ul>
+	<li><U>Hiroyuki Yamamoto</U>, Hideki Yamaji, Yuichiro Abe, Kazuo Harada, Danang Waluyo, Eiichiro Fukusaki, Akihiko Kondo, Hiromu Ohno, Hideki Fukuda, <BR>
+	"Dimensionality reduction for metabolome data using PCA, PLS, OPLS, and RFDA with differential penalties to latent variables",
+	<I>Chemom. Intell. Lab. Syst.</I>, 98 (2009) 136-142.<BR>
+	[ <a href="http://dx.doi.org/10.1016/j.chemolab.2009.05.006">link</a> ]
+	<BR>
+	</li>
+ 
+	<li><U>Hiroyuki Yamamoto</U>, Hideki Yamaji, Eiichiro Fukusaki, Hiromu Ohno, Hideki Fukuda,<BR>
+	"Canonical correlation analysis for multivariate regression and its application to metabolic fingerprinting", <I>Biochem. Eng. Journal</I>, 40 (2008) 199-204.<BR>
+ 	[ <a href="http://dx.doi.org/10.1016/j.bej.2007.12.009">link</a> ]
+	</li>
+	</ul>
+<P>
+ 
+
+</ul>
+
+ <!--shinobi1-->
+<script type="text/javascript" src="http://x6.o-oku.jp/ufo/071708202"></script>
+<noscript><a href="http://x6.o-oku.jp/bin/gg?071708202" target="_blank">
+<img src="http://x6.o-oku.jp/bin/ll?071708202" border="0"></a><br>
+<span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="http://img.shinobi.jp/tadaima/fj.gif" width="19" height="11"> <a href="http://real-estate.rental-rental.net" target="_blank">不動産</a></span></noscript>
+<!--shinobi2-->
+
+</BODY>
+</HTML>
+ 
+ 
+ 
+ 
+ 
+ 
+

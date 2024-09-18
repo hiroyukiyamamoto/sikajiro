@@ -1,0 +1,201 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>
+鶴岡カフェ部(仮称)　営業チェック (β)
+</TITLE>
+<link rel="stylesheet" href="freaks2.css" type="text/css" media="screen">
+</HEAD>
+<BODY>
+
+<BR><BR>
+
+<h2>本日営業中のカフェ (鶴岡市)</h2>
+祝祭日や休業期間など、実際とは異なる可能性があります。<P>
+<a href="index2.html">現在時刻から1時間以上営業中のカフェのページへ</a><BR>
+<a href="index.html">メインページへ</a>
+
+<BR>
+
+<script>
+
+
+// ---------------------------------------------------------------
+
+// -------------------
+//	曜日取得
+// -------------------
+var days =new Array('日','月','火','水','木','金','土');
+var date = new Date();
+var day = days[date.getDay()];
+
+// -------------------
+//	各店舗
+// -------------------
+// Core Design
+if (day!="火"){
+document.write('<h3>Core Design</h3>');
+document.write('11:30～21:00 / 美咲町(<a href="https://www.google.co.jp/maps/place/%EF%BC%88%E6%A0%AA%EF%BC%89%E3%83%A0%E3%83%A9%E3%82%AA%E3%82%AB+%E9%B6%B4%E5%B2%A1%E3%82%B3%E3%82%A2%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0/@38.7337752,139.8014603,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c107ffad6c3ff:0xd3c4a93298695ab!8m2!3d38.733771!4d139.803649">map</a>) / <a href="https://www.facebook.com/pg/tsuruocafe/photos/?tab=album&album_id=1662123694054322">鶴岡カフェ部(仮称)</a> ');
+}
+
+// Covo
+if (day!="無"){
+document.write('<h3>COVO</h3>');
+document.write('月曜不定休 15:00～22:00 / 切添町(<a href="https://www.google.co.jp/maps/place/COVO/@38.7293179,139.8414682,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1abefea76977:0x6f3f0975e51d8034!8m2!3d38.7293137!4d139.8436569">map</a>) / <a href="https://www.facebook.com/pg/tsuruocafe/photos/?tab=album&album_id=1850545485212141">鶴岡カフェ部(仮称)</a>');
+}
+
+// 珈琲島
+if (day!="無"){
+document.write('<h3>珈琲島</h3>');
+document.write('10:00～20:00 / 余慶町・こぴあ(<a href=https://www.google.co.jp/maps/place/%E7%8F%88%E7%90%B2%E5%B3%B6/@38.7460967,139.8283188,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a58bc6a1c93:0xd0d5edb24a5c47b7!8m2!3d38.7460925!4d139.8305075">map</a>) / <a href=https://www.facebook.com/media/set/?set=a.1850055185261171.1073741865.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// スカイラウンジエトワール
+if (day!="無"){
+document.write('<h3>スカイラウンジエトワール</h3>');
+document.write('11:00～24:00 / 錦町・東京第一ホテル鶴岡(<a href=https://www.google.co.jp/maps/place/%E6%9D%B1%E4%BA%AC%E7%AC%AC%E4%B8%80%E3%83%9B%E3%83%86%E3%83%AB%E9%B6%B4%E5%B2%A1/@38.7388939,139.8304695,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1af2d7bae1d5:0x2afe8e85c0ef9075!8m2!3d38.7388897!4d139.8326582">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1850034131929943.1073741864.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// H＆P
+if (day!="木"){
+document.write('<h3>H＆P</h3>');
+document.write('11:00～19:00 / 文園町(<a href="https://www.google.co.jp/maps/place/caf%C3%A9+H%26P+by+Heart%26peace/@38.7190564,139.826965,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1009d284c463:0x9cac885805c565a7!8m2!3d38.7190522!4d139.8291537">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1802306113369412.1073741863.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// スマイル珈琲
+if (day!="木"){
+document.write('<h3>スマイル珈琲</h3>');
+document.write('10:00～19:00 / 美咲町(<a href="https://www.google.co.jp/maps/place/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E7%8F%88%E7%90%B2%E8%B1%86%E5%B0%82%E9%96%80%E5%BA%97+%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E7%8F%88%E7%90%B2/@38.7357026,139.7960276,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c10819711f343:0xc34050d38f0fdda1!8m2!3d38.7356984!4d139.7982163">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1801989053401118.1073741862.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 小幸
+if (day!="日"){
+document.write('<h3>小幸</h3>');
+document.write('10:00～18:00 / 10:00～18:00(<a href="https://www.google.co.jp/maps?q=%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3+%E5%B0%8F%E5%B9%B8&oe=utf-8&client=firefox-b&gfe_rd=cr&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj28KnvyarTAhUMK48KHc9-B5wQ_AUICCgB">map</a>) / <a href="https://www.facebook.com/pg/tsuruocafe/photos/?tab=album&album_id=1766704990262858">鶴岡カフェ部(仮称)</a>');
+}
+
+// カフェ＆ダイニング east
+if (day!="無"){
+document.write('<h3>カフェ＆ダイニング east</h3>');
+document.write('10:00～21:00 (11:30～14:30 , 17:30～20:30) / 東原町・エルサン(<a href="https://www.google.co.jp/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%EF%BC%86%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0+%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88/@38.7212911,139.8422795,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1ab028042df1:0xb55dab0b36df4e84!8m2!3d38.7212869!4d139.8444682">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1766695130263844.1073741860.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// カフェスタジオサンク
+if (day!="無"){
+document.write('<h3>カフェスタジオサンク</h3>');
+document.write('不定休 / 10:00～20:00 / 馬場町(<a href="https://www.google.co.jp/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA+%E3%82%B5%E3%83%B3%E3%82%AF/@38.7260312,139.8264113,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a98a67eec17:0xfec3643673f4db14!8m2!3d38.726027!4d139.8286">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1737042909895733.1073741858.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 香音
+if (day!="金"){
+document.write('<h3>香音</h3>');
+document.write('10:30～18:30 / 美咲町(<a href="https://www.google.co.jp/maps/place/%E9%A6%99%E9%9F%B3/@38.7347802,139.7991213,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c10803959fafb:0x4720e84950ad550c!8m2!3d38.734776!4d139.80131">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1690224267910931.1073741853.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 喫茶まりーな
+if (day!="木"){
+document.write('<h3>喫茶まりーな</h3>');
+document.write('10:30～18:30 / のぞみ町(<a href="https://www.google.co.jp/maps/place/%E5%96%AB%E8%8C%B6%E3%81%BE%E3%82%8A%E3%83%BC%E3%81%AA/@38.7165642,139.8338113,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1aa9ce5f15fd:0x8aea151dd2df7790!8m2!3d38.71656!4d139.836">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1662139327386092.1073741849.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 喫茶花はな
+if (day!="火"){
+document.write('<h3>喫茶花はな</h3>');
+document.write('11:00～15:00 / 大山(<a href="https://www.google.co.jp/maps/place/%E9%B6%B4%E5%B2%A1%E5%B8%82%E7%A4%BE%E4%BC%9A%E7%A6%8F%E7%A5%89%E5%8D%94%E8%AD%B0%E4%BC%9A%EF%BC%88%E7%A4%BE%E4%BC%9A%E7%A6%8F%E7%A5%89%E6%B3%95%E4%BA%BA%EF%BC%89%E9%B6%B4%E5%B2%A1%E5%B8%82%E9%AB%98%E9%BD%A2%E8%80%85%E7%A6%8F%E7%A5%89%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E3%81%8A%E3%81%8A%E3%82%84%E3%81%BE/@38.7517025,139.761383,17z/data=!4m8!1m2!2m1!1z6auY6b2i6ICF56aP56WJ44K744Oz44K_44O844GK44GK44KE44G-!3m4!1s0x5f8c10ac0d50a2f3:0x677fb9355182d7c4!8m2!3d38.7516983!4d139.7635717">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1630559703877388.1073741846.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// さかえや
+if (day!="日"){
+document.write('<h3>さかえや</h3>');
+document.write('11:00～21:00 / 本町(<a href="https://www.google.co.jp/maps/place/%E3%81%95%E3%81%8B%E3%81%88%E3%82%84/@38.726581,139.8286803,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1aa2806f9141:0xcfd185d700d2095f!8m2!3d38.726581!4d139.830869">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1602401923359833.1073741845.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// STUDIO+14
+if (day!="無"){
+document.write('<h3>STUDIO+14</h3>');
+document.write('14:00～24:00 / 朝暘町(<a href="https://www.google.co.jp/maps/place/%E3%80%92997-0024+%E5%B1%B1%E5%BD%A2%E7%9C%8C%E9%B6%B4%E5%B2%A1%E5%B8%82%E6%9C%9D%E6%9A%98%E7%94%BA%EF%BC%91%EF%BC%98%E2%88%92%EF%BC%98/@38.7273154,139.8406378,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1abc024e635f:0xc23c73f946f5b02b!8m2!3d38.7273112!4d139.8428265">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1588811694718856.1073741844.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// コーヒー工房Tack
+if (day!="日"){
+document.write('<h3>コーヒー工房Tack</h3>');
+document.write('9:00～19:30 / 日出(<a href="https://www.google.co.jp/maps/place/%E7%8F%88%E7%90%B2%E5%B7%A5%E6%88%BF%EF%BC%B4%EF%BC%A1%EF%BC%A3%EF%BC%AB%EF%BC%88%E3%82%BF%E3%83%83%E3%82%AF%EF%BC%89/@38.724817,139.8427154,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1aba47d985ad:0xc90b5190aaf97120!8m2!3d38.724817!4d139.8449041">map</a>) / <a href="https://www.facebook.com/pg/tsuruocafe/photos/?tab=album&album_id=1559016674365025">鶴岡カフェ部(仮称)</a>');
+}
+
+// もくもく
+if (day!="月"){
+document.write('<h3>もくもく</h3>');
+document.write('11:00～23:00 / 東原町(<a href="https://www.google.co.jp/maps/place/%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F/@38.7185862,139.8425293,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1aae7e0e7eff:0xa1088ff962ce15c5!8m2!3d38.718582!4d139.844718">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1558632614403431.1073741841.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// michi
+if (day!="木"){
+document.write('<h3>michi</h3>');
+document.write('11:00～23:00 / 東原町(<a href="https://www.google.co.jp/maps/place/%EF%BC%AD%EF%BD%89%EF%BD%83%EF%BD%88%EF%BD%89/@38.71863,139.8428928,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1aae7ed4923d:0xf56fadcbd7478980!8m2!3d38.7186258!4d139.8450815">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1557207264545966.1073741840.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 珈琲野夢
+if (day!="木"){
+document.write('<h3>珈琲野夢</h3>');
+document.write('10:00～18:00 / 日枝辛(<a href="https://www.google.co.jp/maps/place/%E7%8F%88%E7%90%B2%E9%87%8E%E5%A4%A2/@38.7129162,139.8163593,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c101062e236af:0x85b0a8f4d519e941!8m2!3d38.712912!4d139.818548">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1556493827950643.1073741839.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// Cafe BELL
+if (day!="無"){
+document.write('<h3>Cafe BELL</h3>');
+document.write('11:45～21:00 / 日吉町(<a href="https://www.google.co.jp/maps/place/%E3%83%99%E3%83%AB/@38.7362702,139.8332633,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a92cf890ecb:0xf7f37f01e48a2b01!8m2!3d38.736266!4d139.835452">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1546868915579801.1073741837.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// オーロラ 北極光
+if (day!="火"){
+document.write('<h3>オーロラ 北極光</h3>');
+document.write('10:00～22:00 / 日和田(<a href="https://www.google.co.jp/maps/place/%E6%97%A5%E5%92%8C%E7%94%B0%E3%82%AB%E3%83%95%E3%82%A7+%E5%8C%97%E6%A5%B5%E5%85%89/@38.7445607,139.8252249,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a5f68a70d7b:0xc5a0a1f7d841dcae!8m2!3d38.7445565!4d139.8274136">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1512531952346831.1073741834.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// ジロー
+if (day!="木"){
+document.write('<h3>ジロー</h3>');
+document.write('11:00～22:00 / 東新斎町(<a href="https://www.google.co.jp/maps/place/%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%BB%E3%82%B8%E3%83%AD%E3%83%BC/@38.7354722,139.8135703,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a8661798871:0x815f514b018fa5b2!8m2!3d38.735468!4d139.815759">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1504951983104828.1073741830.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 藤の家
+if (day!="月"){
+document.write('<h3>藤の家</h3>');
+document.write('11:00～15:30 , 17:30～21:00 / 藤島(<a href="https://www.google.co.jp/maps/place/%E8%97%A4%E3%81%AE%E5%AE%B6%E5%8F%A4%E6%B0%91%E5%AE%B6%E3%82%AB%E3%83%95%E3%82%A7/@38.7683965,139.9006395,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1c8453a16c55:0x418cf7b2c4653b88!8m2!3d38.7683923!4d139.9028282">map</a>) / <a href=https://www.facebook.com/media/set/?set=a.1560557327544293.1073741843.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// 茶房 海坂
+if (day!="月"){
+document.write('<h3>茶房 海坂</h3>');
+document.write('10:00～18:00 / 家中新町(<a href="https://www.google.co.jp/maps/place/%E8%8C%B6%E6%88%BF%E6%B5%B7%E5%9D%82/@38.7256872,139.8173153,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1a9e191ebacb:0xb402688bc8ee6fb8!8m2!3d38.725683!4d139.819504">map</a>) / <a href=https://www.facebook.com/media/set/?set=a.1506343269632366.1073741831.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+// Big
+if (day!="月"){
+document.write('<h3>Big</h3>');
+document.write('小淀川(<a href="https://www.google.co.jp/maps/place/Coffee+Dome+Big/@38.7318935,139.7954833,17z/data=!3m1!4b1!4m5!3m4!1s0x5f8c1086cd0f2909:0x911f867885566c31!8m2!3d38.7318893!4d139.797672">map</a>) / <a href="https://www.facebook.com/media/set/?set=a.1503955149871178.1073741829.1502201923379834&type=3">鶴岡カフェ部(仮称)</a>');
+}
+
+if (day=="無") {
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+document.write('<h3></h3>');
+}
+
+</script>
+
+<BR><BR><BR>
+問い合わせなどは、<a href="https://www.facebook.com/tsuruocafe/">鶴岡カフェ部(仮称)facebookページ</a>からメッセージをお送りください。
+</BODY>
+</HTML>
+ 
+ 
+ 
+ 
+ 
+ 
+
