@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vertex AI Search Widget (Public)</title>
 
-  <!-- Widget bundle -->
+  <!-- Widget bundle (only once) -->
   <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=ja"></script>
 
   <style>
@@ -16,17 +16,12 @@
 <body>
   <h2>Vertex AI Search Widget（公開アクセス）</h2>
 
-<!-- Widget JavaScript bundle -->
-<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=ja"></script>
+  <gen-search-widget
+    configId="ecfdba0a-f716-45fa-9e9e-7d4955c445c3"
+    triggerId="searchWidgetTrigger">
+  </gen-search-widget>
 
-<!-- Search widget element is not visible by default -->
-<gen-search-widget
-  configId="ecfdba0a-f716-45fa-9e9e-7d4955c445c3"
-  triggerId="searchWidgetTrigger">
-</gen-search-widget>
-
-<!-- Element that opens the widget on click. It does not have to be an input -->
-<input placeholder="ここで検索" id="searchWidgetTrigger" />
+  <input placeholder="ここで検索" id="searchWidgetTrigger" />
 
 </body>
 </html>
