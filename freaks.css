@@ -1,5 +1,10 @@
 /* body */
 
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
 body {
 	color: #000000;
 	background-color: #ffffff;
@@ -53,7 +58,8 @@ h3 {
 	border-color: gray;
 	border-width: 0px 0px 1px 0px;
 	font-weight: bold;
-	width:600px;
+	width: 600px;
+	max-width: 100%;
 	font-size: 12pt;
 }
 
@@ -80,4 +86,39 @@ height: 120px;
 
 #c-box {
           float: right;
+}
+
+@media (max-width: 600px) {
+	body {
+		margin: 24px 20px;
+		font-size: 17px;
+		line-height: 1.8;
+	}
+
+	h3 {
+		width: auto;
+		margin-top: 32px;
+		font-size: 18px;
+	}
+
+	ul {
+		padding-left: 24px;
+	}
+
+	img,
+	iframe {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.sample001 {
+		position: static;
+		width: 100px;
+		height: auto;
+	}
+
+	#b-box,
+	#c-box {
+		float: none;
+	}
 }
