@@ -89,10 +89,23 @@ height: 120px;
 }
 
 @media (max-width: 600px) {
+	html,
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
 	body {
 		margin: 24px 20px;
 		font-size: 17px;
 		line-height: 1.8;
+		overflow-wrap: anywhere;
 	}
 
 	h3 {
