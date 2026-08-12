@@ -8,10 +8,10 @@ html {
 body {
 	color: #000000;
 	background-color: #ffffff;
-	margin-left: 5%;
-	margin-right: 5%;
-	font-family: verdana, arial;
+	margin: 40px 5%;
+	font-family: Verdana, Arial, sans-serif;
 	font-size: 11pt;
+	line-height: 1.5;
 }
 
 
@@ -89,23 +89,10 @@ height: 120px;
 }
 
 @media (max-width: 600px) {
-	html,
-	body {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
-
 	body {
 		margin: 24px 20px;
 		font-size: 17px;
 		line-height: 1.8;
-		overflow-wrap: anywhere;
 	}
 
 	h3 {
