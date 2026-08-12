@@ -89,10 +89,23 @@ height: 120px;
 }
 
 @media (max-width: 600px) {
+	html {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
 	body {
 		margin: 24px 20px;
+		max-width: calc(100% - 40px);
+		overflow-x: hidden;
+		overflow-wrap: anywhere;
+		word-break: break-word;
 		font-size: 17px;
 		line-height: 1.8;
+	}
+
+	body * {
+		box-sizing: border-box;
 	}
 
 	h3 {
@@ -109,6 +122,13 @@ height: 120px;
 	iframe {
 		max-width: 100%;
 		height: auto;
+	}
+
+	pre,
+	table {
+		display: block;
+		max-width: 100%;
+		overflow-x: auto;
 	}
 
 	.sample001 {
